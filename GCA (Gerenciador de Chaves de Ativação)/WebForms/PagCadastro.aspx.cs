@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using GCA__Gerenciador_de_Chaves_de_Ativação_.Útil;
 
 namespace GCA__Gerenciador_de_Chaves_de_Ativação_.WebForms
 {
@@ -15,6 +16,54 @@ namespace GCA__Gerenciador_de_Chaves_de_Ativação_.WebForms
             PanPnlCadastro_Maquina.Visible = false;
             PanPnlCadastro_Usuario.Visible = false;
             PnlRevisaoCadastro.Visible = false;
+        }
+
+        protected void AtualizaDdlTipoSoftware()
+        {
+            DdlTipoSoftware.DataSource = Framework.GetDataTable("select ID_Software, TipoDeSoftware from tb_software");
+            DdlTipoSoftware.DataBind();
+        }
+
+        protected void AtualizaDdlIdioma()
+        {
+            DdlIdioma.DataSource = Framework.GetDataTable("select ID_Software, Idioma from tb_software");
+            DdlIdioma.DataBind();
+        }
+
+        protected void AtualizaDdlSistema()
+        {
+            DdlSistema.DataSource = Framework.GetDataTable("select ID_Software, Sistema from tb_software");
+            DdlSistema.DataBind();
+        }
+
+        protected void AtualizaDdlOS()
+        {
+            DdlSistemaOperacional.DataSource = Framework.GetDataTable("select ID_Maquina, SistemaOperacional from tb_Maquina");
+            DdlSistemaOperacional.DataBind();
+        }
+
+        protected void AtualizaDdlMemoriaRam()
+        {
+            DdlMemoriaRam.DataSource = Framework.GetDataTable("select ID_Maquina, Sistema from tb_Maquina");
+            DdlMemoriaRam.DataBind();
+        }
+
+        protected void AtualizaDdlQtdMemoriaRam()
+        {
+            DdlQtdMemoria.DataSource = Framework.GetDataTable("select ID_Maquina, Sistema from tb_maquina");
+            DdlQtdMemoria.DataBind();
+        }
+
+        protected void AtualizaDdlArmazenamento()
+        {
+            DdlArmazenamento.DataSource = Framework.GetDataTable("select ID_Maquina, Sistema from tb_maquina");
+            DdlArmazenamento.DataBind();
+        }
+
+        protected void AtualizaDdlQtdArmazenamento()
+        {
+            DdlQtdArmazenamento.DataSource = Framework.GetDataTable("select ID_Maquina, Sistema from tb_maquina");
+            DdlQtdArmazenamento.DataBind();
         }
 
         protected void Btn__Avançar__Software_Click(object sender, EventArgs e)
@@ -47,7 +96,17 @@ namespace GCA__Gerenciador_de_Chaves_de_Ativação_.WebForms
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                AtualizaDdlTipoSoftware();
+                AtualizaDdlIdioma();
+                AtualizaDdlSistema();
+                AtualizaDdlOS();
+                AtualizaDdlMemoriaRam();
+                AtualizaDdlQtdMemoriaRam();
+                AtualizaDdlArmazenamento();
+                AtualizaDdlQtdArmazenamento();
+            }
         }
     }
 }

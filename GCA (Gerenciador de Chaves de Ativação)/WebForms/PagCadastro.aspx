@@ -26,17 +26,17 @@
                 <section class="PnlCadastro__Software__BlockDdl">
                     <article class="PnlCadastro__Software__BlockDdl1">
                         <asp:Label ID="LbTipoSoftware" CssClass="PnlCadastro__Label" runat="server" Text="Tipo de Software"></asp:Label>
-                        <asp:DropDownList ID="DdlTipoSoftware" CssClass="PnlCadastroSoftware__Ddl" runat="server"></asp:DropDownList>
+                        <asp:DropDownList ID="DdlTipoSoftware" CssClass="PnlCadastroSoftware__Ddl" DataTextField="TipoDeSoftware" DataValueField="ID_Software" runat="server"></asp:DropDownList>
 
                         <asp:Label ID="LbIdioma" CssClass="PnlCadastro__Label" runat="server" Text="Idioma"></asp:Label>
-                        <asp:DropDownList ID="DdlIdioma" CssClass="PnlCadastroSoftware__Ddl" runat="server"></asp:DropDownList>
+                        <asp:DropDownList ID="DdlIdioma" CssClass="PnlCadastroSoftware__Ddl" DataTextField="Idioma" DataValueField="ID_Software" runat="server"></asp:DropDownList>
                     </article>
                     <article class="PnlCadastro__Software__BlockDdl2 ">
                         <asp:Label ID="LbTipoLicenca" CssClass="PnlCadastro__Label" runat="server" Text="Tipo de Licença"></asp:Label>
                         <asp:DropDownList ID="DdlLicenca" CssClass="PnlCadastroSoftware__Ddl" runat="server"></asp:DropDownList>
 
                         <asp:Label ID="LbSistema" CssClass="PnlCadastro__Label" runat="server" Text="Sistema"></asp:Label>
-                        <asp:DropDownList ID="DdlSistema" CssClass="PnlCadastroSoftware__Ddl" runat="server"></asp:DropDownList>
+                        <asp:DropDownList ID="DdlSistema" CssClass="PnlCadastroSoftware__Ddl" DataTextField="Sistema" DataValueField="ID_Software" runat="server"></asp:DropDownList>
                     </article>
                 </section>
                 <article class="PnlCadastro__Software__BlockText , PnlCadastro__Software__BlockText#2">
@@ -68,7 +68,7 @@
                     <asp:TextBox ID="txtNomeMaquina" CssClass="PnlCadastro__TextBox" runat="server"></asp:TextBox>
 
                     <asp:Label ID="LbSistemaOperacional" CssClass="PnlCadastro__Label" runat="server" Text="Sistema Operacional"></asp:Label>
-                    <asp:TextBox ID="txtSistemaOperacional" CssClass="PnlCadastro__TextBox" runat="server"></asp:TextBox>
+                    <asp:DropDownList ID="DdlSistemaOperacional" CssClass="PnlCadastroSoftware__Ddl" runat="server"></asp:DropDownList>
                 </article>
                 <section class="PnlCadastro__Software__BlockDdl">
                     <article class="PnlCadastro__Software__BlockDdl1">
