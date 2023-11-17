@@ -4,12 +4,32 @@
 
 <html>
 <head runat="server">
-    <title></title>
+    <title>GCA Gerenciador de Chave de Ativação</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@400;600;800&family=Open+Sans:ital,wght@0,600;1,400&family=Roboto:wght@300;400;500&family=Sora:wght@400;600&display=swap" rel="stylesheet">
+    <link href="../CSS/Reset.css" rel="stylesheet" />
+    <link href="../CSS/Principal.css" rel="stylesheet" />
+    <link href="../Bootstrap/Css/bootstrap.css" rel="stylesheet" />
+    <script src="../Bootstrap/Js/bootstrap.js"></script>
 </head>
 <body>
     <form id="form1" runat="server">
+        <header class="header__Principal">
+            <asp:Label ID="Lb__Titulo" runat="server" Text="GCA"></asp:Label>
+            <nav id="Menu" class="Menu" runat="server">
+                <ul class="Menu__ul">
+                    <li class="Menu__li">
+                        <asp:LinkButton CssClass="Btn__Menu" runat="server">Início</asp:LinkButton></li>
+                    <li class="Menu__li">
+                        <asp:LinkButton CssClass="Btn__Menu" runat="server">Cadastro</asp:LinkButton></li>
+                    <li class="Menu__li">
+                        <asp:LinkButton CssClass="Btn__Menu" runat="server">Teste</asp:LinkButton></li>
+                </ul>
+            </nav>
+        </header>
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>

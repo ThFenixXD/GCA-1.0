@@ -75,7 +75,31 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Bootstrap\Css\bootstrap-grid.css" />
+    <Content Include="Bootstrap\Css\bootstrap-grid.min.css" />
+    <Content Include="Bootstrap\Css\bootstrap-grid.rtl.css" />
+    <Content Include="Bootstrap\Css\bootstrap-grid.rtl.min.css" />
+    <Content Include="Bootstrap\Css\bootstrap-reboot.css" />
+    <Content Include="Bootstrap\Css\bootstrap-reboot.min.css" />
+    <Content Include="Bootstrap\Css\bootstrap-reboot.rtl.css" />
+    <Content Include="Bootstrap\Css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Bootstrap\Css\bootstrap-utilities.css" />
+    <Content Include="Bootstrap\Css\bootstrap-utilities.min.css" />
+    <Content Include="Bootstrap\Css\bootstrap-utilities.rtl.css" />
+    <Content Include="Bootstrap\Css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Bootstrap\Css\bootstrap.css" />
+    <Content Include="Bootstrap\Css\bootstrap.min.css" />
+    <Content Include="Bootstrap\Css\bootstrap.rtl.css" />
+    <Content Include="Bootstrap\Css\bootstrap.rtl.min.css" />
+    <Content Include="Bootstrap\Js\bootstrap.bundle.js" />
+    <Content Include="Bootstrap\Js\bootstrap.bundle.min.js" />
+    <Content Include="Bootstrap\Js\bootstrap.esm.js" />
+    <Content Include="Bootstrap\Js\bootstrap.esm.min.js" />
+    <Content Include="Bootstrap\Js\bootstrap.js" />
+    <Content Include="Bootstrap\Js\bootstrap.min.js" />
     <Content Include="CSS\PagCadastro.css" />
+    <Content Include="CSS\Principal.css" />
+    <Content Include="CSS\Reset.css" />
     <Content Include="Global.asax" />
     <Content Include="ModelGCA.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -125,19 +149,19 @@
     <Compile Include="tb_Usuario.cs">
       <DependentUpon>ModelGCA.tt</DependentUpon>
     </Compile>
-    <Compile Include="WebForms\PagCadastro.aspx.cs">
-      <DependentUpon>PagCadastro.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForms\PagCadastro.aspx.designer.cs">
-      <DependentUpon>PagCadastro.aspx</DependentUpon>
-    </Compile>
     <Compile Include="WebForms\Principal.Master.cs">
       <DependentUpon>Principal.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="WebForms\Principal.Master.designer.cs">
       <DependentUpon>Principal.Master</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\PagCadastro.aspx.cs">
+      <DependentUpon>PagCadastro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\PagCadastro.aspx.designer.cs">
+      <DependentUpon>PagCadastro.aspx</DependentUpon>
     </Compile>
     <Compile Include="Útil\Framework.cs" />
   </ItemGroup>
@@ -149,6 +173,28 @@
     <Content Include="ModelGCA.edmx.diagram">
       <DependentUpon>ModelGCA.edmx</DependentUpon>
     </Content>
+    <Content Include="Bootstrap\Css\bootstrap-grid.css.map" />
+    <Content Include="Bootstrap\Css\bootstrap-grid.min.css.map" />
+    <Content Include="Bootstrap\Css\bootstrap-grid.rtl.css.map" />
+    <Content Include="Bootstrap\Css\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Bootstrap\Css\bootstrap-reboot.css.map" />
+    <Content Include="Bootstrap\Css\bootstrap-reboot.min.css.map" />
+    <Content Include="Bootstrap\Css\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Bootstrap\Css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Bootstrap\Css\bootstrap-utilities.css.map" />
+    <Content Include="Bootstrap\Css\bootstrap-utilities.min.css.map" />
+    <Content Include="Bootstrap\Css\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Bootstrap\Css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Bootstrap\Css\bootstrap.css.map" />
+    <Content Include="Bootstrap\Css\bootstrap.min.css.map" />
+    <Content Include="Bootstrap\Css\bootstrap.rtl.css.map" />
+    <Content Include="Bootstrap\Css\bootstrap.rtl.min.css.map" />
+    <Content Include="Bootstrap\Js\bootstrap.bundle.js.map" />
+    <Content Include="Bootstrap\Js\bootstrap.bundle.min.js.map" />
+    <Content Include="Bootstrap\Js\bootstrap.esm.js.map" />
+    <Content Include="Bootstrap\Js\bootstrap.esm.min.js.map" />
+    <Content Include="Bootstrap\Js\bootstrap.js.map" />
+    <Content Include="Bootstrap\Js\bootstrap.min.js.map" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
