@@ -16,7 +16,7 @@
             OnItemCommand="GridConsultaChaveAtivacao_ItemCommand" 
             AutoGenerateColumns="false">
             <GroupingSettings CollapseAllTooltip="Collapse all columns" />
-            <MasterTableView DataKeyNames="">
+            <MasterTableView DataKeyNames="ID_Software, ID_Maquina, ID_Usuario">
                 <Columns>
                     <telerik:GridTemplateColumn UniqueName="OP" AllowFiltering="false">
                         <ItemTemplate>
