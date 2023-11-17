@@ -9,7 +9,7 @@
     <link href="../CSS/Reset.css" rel="stylesheet" />
     <link href="../CSS/PagCadastro.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@400;600;800&family=Open+Sans:ital,wght@0,600;1,400&family=Roboto:wght@300;400;500&family=Sora:wght@400;600&display=swap" rel="stylesheet">
     <%--<link href="../Bootstrap/Css/bootstrap.min.css" rel="stylesheet" />--%>
 
@@ -45,6 +45,12 @@
 
                     <asp:Label ID="LbVersao" CssClass="PnlCadastro__Label" runat="server" Text="Versão"></asp:Label>
                     <asp:TextBox ID="txtVersao" CssClass="PnlCadastro__TextBox" runat="server"></asp:TextBox>
+
+                    <asp:Label ID="LbChaveAtivacao" CssClass="PnlCadastro__Label" runat="server" Text="Chave de Ativação"></asp:Label>
+                    <asp:TextBox ID="txtChaveAtivacao" CssClass="PnlCadastro__TextBox" runat="server"></asp:TextBox>
+
+                    <asp:Label ID="LbConfirmaChaveAtivacao" CssClass="PnlCadastro__Label" runat="server" Text="Confirmar Chave de Ativação"></asp:Label>
+                    <asp:TextBox ID="txtConfirmatxtChaveAtivacao" CssClass="PnlCadastro__TextBox" runat="server"></asp:TextBox>
                 </article>
             </section>
             <div class="PnlCadastro__Btn">
@@ -128,6 +134,9 @@
 
                     <asp:Label ID="LbVersaoRV" CssClass="PnlCadastro__Label" runat="server" Text="Versão"></asp:Label>
                     <asp:TextBox ID="txtVersãoRV" CssClass="PnlCadastro__TextBox, PnlCadastro__TextBox_Revisao" runat="server"></asp:TextBox>
+
+                    <asp:Label ID="LbChaveAtivacaoRV" CssClass="PnlCadastro__Label" runat="server" Text="Chave de Ativação"></asp:Label>
+                    <asp:TextBox ID="txtChaveAtivacaoRV" CssClass="PnlCadastro__TextBox" runat="server"></asp:TextBox>
 
                     <asp:Label ID="LbNomeMaquinaRV" CssClass="PnlCadastro__Label" runat="server" Text="Nome da Máquina"></asp:Label>
                     <asp:TextBox ID="txtNomaMaquinaRV" CssClass="PnlCadastro__TextBox, PnlCadastro__TextBox_Revisao" runat="server"></asp:TextBox>

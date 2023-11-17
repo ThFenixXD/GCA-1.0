@@ -68,6 +68,10 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Telerik.Web.UI, Version=2020.1.219.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Progress\Telerik UI for ASP.NET AJAX R1 2020\Bin45\Telerik.Web.UI.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
@@ -113,6 +117,7 @@
     </Content>
     <Content Include="Web.config" />
     <Content Include="WebForms\PagCadastro.aspx" />
+    <Content Include="WebForms\PagConsultaChaves.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -148,6 +153,13 @@
     </Compile>
     <Compile Include="tb_Usuario.cs">
       <DependentUpon>ModelGCA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\PagConsultaChaves.aspx.cs">
+      <DependentUpon>PagConsultaChaves.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\PagConsultaChaves.aspx.designer.cs">
+      <DependentUpon>PagConsultaChaves.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForms\Principal.Master.cs">
       <DependentUpon>Principal.Master</DependentUpon>
@@ -210,6 +222,9 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

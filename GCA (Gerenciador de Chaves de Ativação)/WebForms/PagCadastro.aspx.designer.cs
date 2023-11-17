@@ -157,6 +157,42 @@ namespace GCA__Gerenciador_de_Chaves_de_Ativação_.WebForms {
         protected global::System.Web.UI.WebControls.TextBox txtVersao;
         
         /// <summary>
+        /// LbChaveAtivacao control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LbChaveAtivacao;
+        
+        /// <summary>
+        /// txtChaveAtivacao control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtChaveAtivacao;
+        
+        /// <summary>
+        /// LbConfirmaChaveAtivacao control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LbConfirmaChaveAtivacao;
+        
+        /// <summary>
+        /// txtConfirmatxtChaveAtivacao control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtConfirmatxtChaveAtivacao;
+        
+        /// <summary>
         /// Btn__Avançar__Software control.
         /// </summary>
         /// <remarks>
@@ -506,6 +542,24 @@ namespace GCA__Gerenciador_de_Chaves_de_Ativação_.WebForms {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtVersãoRV;
+        
+        /// <summary>
+        /// LbChaveAtivacaoRV control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LbChaveAtivacaoRV;
+        
+        /// <summary>
+        /// txtChaveAtivacaoRV control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtChaveAtivacaoRV;
         
         /// <summary>
         /// LbNomeMaquinaRV control.
