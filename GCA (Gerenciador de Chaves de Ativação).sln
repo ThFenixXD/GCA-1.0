@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29001.49
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GCA (Gerenciador de Chaves de Ativação)", "GCA (Gerenciador de Chaves de Ativação)\GCA (Gerenciador de Chaves de Ativação).csproj", "{8EED06A5-ABAF-48C7-A192-20E73D7EBE49}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8EED06A5-ABAF-48C7-A192-20E73D7EBE49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EED06A5-ABAF-48C7-A192-20E73D7EBE49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EED06A5-ABAF-48C7-A192-20E73D7EBE49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EED06A5-ABAF-48C7-A192-20E73D7EBE49}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {42BD4E44-59A8-457A-8A18-2EA5377EB355}
+	EndGlobalSection
+EndGlobal
