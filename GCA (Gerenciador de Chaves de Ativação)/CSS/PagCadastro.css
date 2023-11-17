@@ -1,5 +1,4 @@
 ﻿html {
-    /*background-color: #4F78C4;*/
     background-color: #4F78C4;
     font-family: 'Montserrat', sans-serif;
 }
@@ -16,20 +15,19 @@
 
 .PnlCadastro__fieldset {
     width: 100%;
-    height: 400px;
+    height: 90%;
     line-height: 1.8
 }
 
-.PnlCadastro__Software__Legend {
+.PnlCadastro__Legend {
     font-size: 3rem;
     font-weight: 600;
     text-align: center;
     text-transform: uppercase;
     color: #4F78C4;
-    /*padding: 1rem 0;*/
 }
 
-.PnlCadastroSoftware__Label {
+.PnlCadastro__Label {
     font-weight: 600;
     color: #4F78C4;
 }
@@ -66,4 +64,32 @@
 .Btn {
     margin-top: .5rem;
     align-items: center;
+}
+
+.PnlCadastro__Maquina__BlockText{
+    display:flex;
+    flex-direction: column;
+}
+
+.PnlCadastro__Usuario__BlockText {
+    display: flex;
+    flex-direction: column;
+}
+
+.PnlCadastro__Revisao__BlockText {
+    display:flex;
+    flex-direction: column;
+}
+
+.PnlRevisaoCadastro {
+    display: flex;
+    flex-direction: column;
+    /*background-color: yellow;*/
+    padding-bottom: 2em;
+}
+
+.PnlCadastro__TextBox_Revisao{
+    border:none;
+    margin-left: 1rem;
+    color:black;
 }
