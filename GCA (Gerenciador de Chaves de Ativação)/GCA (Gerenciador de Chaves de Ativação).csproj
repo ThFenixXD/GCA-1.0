@@ -89,7 +89,6 @@
     </Content>
     <Content Include="Web.config" />
     <Content Include="WebForms\PagCadastro.aspx" />
-    <Content Include="WebForms\WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -139,13 +138,6 @@
     </Compile>
     <Compile Include="WebForms\Principal.Master.designer.cs">
       <DependentUpon>Principal.Master</DependentUpon>
-    </Compile>
-    <Compile Include="WebForms\WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForms\WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Útil\Framework.cs" />
   </ItemGroup>
