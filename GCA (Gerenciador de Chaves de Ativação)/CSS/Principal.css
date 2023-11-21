@@ -1,33 +1,80 @@
-﻿.header__Principal {
+﻿html {
     background-color: #4F78C4;
-    color: white;
     font-family: 'Montserrat', sans-serif;
-    text-align: center;
 }
 
-#Lb__Titulo{
-    font-size: 6rem;
-    font-weight: 600;
-    margin-right: 2rem;
+body {
+    height: 100vh;
+    background-color: inherit;
+    margin: 0;
 }
 
-.Menu {
-    text-align:center;
-    margin-right: 2rem;
+.content {
+    border: 1px solid white;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
 }
 
-.Menu__ul {
+.menu-lateral {
+    background-color: #202020;
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: white;
+    border-right: 1px solid red;
+}
+
+    .menu-lateral ul {
+        padding-left: 0;
+        height: 100%;
+        width: 250px;
+    }
+
+    .menu-lateral i {
+        color: white;
+        margin-right: 20px;
+        font-size: 32px;
+    }
+
+.txt-link {
+    color: white;
+}
+
+
+.menu-lateral ul li a {
+    text-decoration: none;
+    padding: 10px 0 10px 20px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #4F78C4;
+    border-bottom: 1px solid #4F78C4;
+    transition: .60s;
+}
+
+    .menu-lateral ul li a:hover {
+        background-color: #4F78C4;
+    }
+
+
+.icone {
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+.txt-link {
+    align-items: center;
+}
+
+.logo {
     display: flex;
     justify-content: center;
-    grid-gap: 1rem;
-    font-weight: 600;
+    height: 500px;
+    align-items: center;
 }
 
-.Btn__Menu {
-    color: white;
-    text-decoration: none;
-}
-
-.Btn__Menu:hover{
-    text-decoration: underline;
-}
+    .logo i {
+        font-size: 128px;
+    }

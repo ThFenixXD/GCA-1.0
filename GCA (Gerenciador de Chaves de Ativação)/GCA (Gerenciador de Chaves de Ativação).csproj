@@ -103,8 +103,11 @@
     <Content Include="Bootstrap\Js\bootstrap.min.js" />
     <Content Include="CSS\PagCadastro.css" />
     <Content Include="CSS\Principal.css" />
+    <Content Include="Testes\Principal.css" />
     <Content Include="CSS\Reset.css" />
     <Content Include="Global.asax" />
+    <Content Include="Imagens\Chave.png" />
+    <Content Include="Imagens\thumb-2-6abee8-pixabay-secao-png-designer-mao-de-vaca1.png" />
     <Content Include="ModelGCA.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>ModelGCA.Context.cs</LastGenOutput>
@@ -116,8 +119,10 @@
       <LastGenOutput>ModelGCA.cs</LastGenOutput>
     </Content>
     <Content Include="Web.config" />
-    <Content Include="WebForms\PagCadastro.aspx" />
+    <Content Include="Testes\PagCadastro.aspx" />
+    <Content Include="WebForms\PagCadastroWMP.aspx" />
     <Content Include="WebForms\PagConsultaChaves.aspx" />
+    <Content Include="WebForms\WebForm2.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -154,6 +159,13 @@
     <Compile Include="tb_Usuario.cs">
       <DependentUpon>ModelGCA.tt</DependentUpon>
     </Compile>
+    <Compile Include="WebForms\PagCadastroWMP.aspx.cs">
+      <DependentUpon>PagCadastroWMP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\PagCadastroWMP.aspx.designer.cs">
+      <DependentUpon>PagCadastroWMP.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebForms\PagConsultaChaves.aspx.cs">
       <DependentUpon>PagConsultaChaves.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -168,12 +180,19 @@
     <Compile Include="WebForms\Principal.Master.designer.cs">
       <DependentUpon>Principal.Master</DependentUpon>
     </Compile>
-    <Compile Include="WebForms\PagCadastro.aspx.cs">
+    <Compile Include="Testes\PagCadastro.aspx.cs">
       <DependentUpon>PagCadastro.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForms\PagCadastro.aspx.designer.cs">
+    <Compile Include="Testes\PagCadastro.aspx.designer.cs">
       <DependentUpon>PagCadastro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Útil\Framework.cs" />
   </ItemGroup>
@@ -207,6 +226,7 @@
     <Content Include="Bootstrap\Js\bootstrap.esm.min.js.map" />
     <Content Include="Bootstrap\Js\bootstrap.js.map" />
     <Content Include="Bootstrap\Js\bootstrap.min.js.map" />
+    <Content Include="Imagens\Alexa.webp" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

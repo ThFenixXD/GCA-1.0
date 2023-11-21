@@ -1,16 +1,12 @@
-﻿html {
-    background-color: #4F78C4;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.PnlCadastro {
+﻿.PnlCadastro {
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
     min-height: 60vh;
-    width: 50%;
+    width: 650px;
+    border: 1px solid red;
 }
 
 .PnlCadastro__fieldset {
@@ -84,7 +80,6 @@
 .PnlRevisaoCadastro {
     display: flex;
     flex-direction: column;
-    /*background-color: yellow;*/
     padding-bottom: 2em;
 }
 

@@ -1,6 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/WebForms/Principal.Master" AutoEventWireup="true" CodeBehind="PagCadastro.aspx.cs" Inherits="GCA__Gerenciador_de_Chaves_de_Ativação_.WebForms.WebForm1" %>
-
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/WebForms/Principal.Master" AutoEventWireup="true" CodeBehind="PagCadastroWMP.aspx.cs" Inherits="GCA__Gerenciador_de_Chaves_de_Ativação_.WebForms.PagCadastroWMP" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -8,12 +6,10 @@
 
     <link href="../CSS/Reset.css" rel="stylesheet" />
     <link href="../CSS/PagCadastro.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@400;600;800&family=Open+Sans:ital,wght@0,600;1,400&family=Roboto:wght@300;400;500&family=Sora:wght@400;600&display=swap" rel="stylesheet">
-    <%--<link href="../Bootstrap/Css/bootstrap.min.css" rel="stylesheet" />--%>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@400;600;800&family=Open+Sans:ital,wght@0,600;1,400&family=Roboto:wght@300;400;500&family=Sora:wght@400;600&display=swap" rel="stylesheet" />
 
-    <%--<script src="../Bootstrap/Js/bootstrap.min.js"></script>--%>
 
     <asp:Panel ID="PnlCadastro_Software" CssClass="PnlCadastro" runat="server">
         <fieldset id="PnlCadastroSoftware__Fieldset" class="PnlCadastro__fieldset" runat="server">
@@ -68,22 +64,22 @@
                     <asp:TextBox ID="txtNomeMaquina" CssClass="PnlCadastro__TextBox" runat="server"></asp:TextBox>
 
                     <asp:Label ID="LbSistemaOperacional" CssClass="PnlCadastro__Label" runat="server" Text="Sistema Operacional"></asp:Label>
-                    <asp:DropDownList ID="DdlSistemaOperacional" CssClass="PnlCadastroSoftware__Ddl" runat="server"></asp:DropDownList>
+                    <asp:DropDownList ID="DdlSistemaOperacional" CssClass="PnlCadastroSoftware__Ddl" DataTextField="SistemaOperacional" DataValueField="ID_Maquina" runat="server"></asp:DropDownList>
                 </article>
                 <section class="PnlCadastro__Software__BlockDdl">
                     <article class="PnlCadastro__Software__BlockDdl1">
                         <asp:Label ID="LbMemoriaRam" CssClass="PnlCadastro__Label" runat="server" Text="Memória Ram"></asp:Label>
-                        <asp:DropDownList ID="DdlMemoriaRam" CssClass="PnlCadastroSoftware__Ddl" runat="server"></asp:DropDownList>
+                        <asp:DropDownList ID="DdlMemoriaRam" CssClass="PnlCadastroSoftware__Ddl" DataTextField="MemoriaRam" DataValueField="ID_Maquina" runat="server"></asp:DropDownList>
 
                         <asp:Label ID="LbQtdMemoria" CssClass="PnlCadastro__Label" runat="server" Text="Qtd Memória"></asp:Label>
-                        <asp:DropDownList ID="DdlQtdMemoria" CssClass="PnlCadastroSoftware__Ddl" runat="server"></asp:DropDownList>
+                        <asp:DropDownList ID="DdlQtdMemoria" CssClass="PnlCadastroSoftware__Ddl" DataTextField="MemoriaRam" DataValueField="ID_Maquina" runat="server"></asp:DropDownList>
                     </article>
                     <article class="PnlCadastro__Software__BlockDdl2 ">
                         <asp:Label ID="LbArmazenamento" CssClass="PnlCadastro__Label" runat="server" Text="Armazenamento"></asp:Label>
-                        <asp:DropDownList ID="DdlArmazenamento" CssClass="PnlCadastroSoftware__Ddl" runat="server"></asp:DropDownList>
+                        <asp:DropDownList ID="DdlArmazenamento" CssClass="PnlCadastroSoftware__Ddl" DataTextField="Armazenamento" DataValueField="ID_Maquina" runat="server"></asp:DropDownList>
 
                         <asp:Label ID="LbQtdArmazenamento" CssClass="PnlCadastro__Label" runat="server" Text="Qtd Armazenamento"></asp:Label>
-                        <asp:DropDownList ID="DdlQtdArmazenamento" CssClass="PnlCadastroSoftware__Ddl" runat="server"></asp:DropDownList>
+                        <asp:DropDownList ID="DdlQtdArmazenamento" CssClass="PnlCadastroSoftware__Ddl" DataTextField="Armazenamento" DataValueField="ID_Maquina" runat="server"></asp:DropDownList>
                     </article>
                 </section>
             </section>
@@ -101,7 +97,7 @@
                 <asp:TextBox ID="txtUsuario" CssClass="PnlCadastro__TextBox" runat="server"></asp:TextBox>
 
                 <asp:Label ID="LbMaquina" CssClass="PnlCadastro__Label" runat="server" Text="Máquina"></asp:Label>
-                <asp:DropDownList ID="DdlMaquina" CssClass="PnlCadastroSoftware__Ddl" runat="server"></asp:DropDownList>
+                <asp:DropDownList ID="DdlMaquina" CssClass="PnlCadastroSoftware__Ddl" DataTextField="NomeMaquina" DataValueField="ID_Maquina" runat="server"></asp:DropDownList>
             </article>
             <div class="PnlCadastro__Btn">
                 <asp:Button ID="Btn__Avançar__Usuário" CssClass="Btn" runat="server" Text="Avançar" OnClick="Btn__Avançar__Usuário_Click" />
@@ -178,3 +174,4 @@
     </asp:Panel>
 
 </asp:Content>
+

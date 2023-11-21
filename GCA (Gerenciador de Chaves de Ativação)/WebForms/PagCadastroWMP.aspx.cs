@@ -8,7 +8,7 @@ using GCA__Gerenciador_de_Chaves_de_Ativação_.Útil;
 
 namespace GCA__Gerenciador_de_Chaves_de_Ativação_.WebForms
 {
-    public partial class WebForm1 : System.Web.UI.Page
+    public partial class PagCadastroWMP : System.Web.UI.Page
     {
         protected void EscondePaineis()
         {
@@ -44,25 +44,25 @@ namespace GCA__Gerenciador_de_Chaves_de_Ativação_.WebForms
 
         protected void AtualizaDdlMemoriaRam()
         {
-            DdlMemoriaRam.DataSource = Framework.GetDataTable("select ID_Maquina, Sistema from tb_Maquina");
+            DdlMemoriaRam.DataSource = Framework.GetDataTable("select ID_Maquina, MemoriaRam from tb_Maquina");
             DdlMemoriaRam.DataBind();
         }
 
         protected void AtualizaDdlQtdMemoriaRam()
         {
-            DdlQtdMemoria.DataSource = Framework.GetDataTable("select ID_Maquina, Sistema from tb_maquina");
+            DdlQtdMemoria.DataSource = Framework.GetDataTable("select ID_Maquina, MemoriaRam from tb_maquina");
             DdlQtdMemoria.DataBind();
         }
 
         protected void AtualizaDdlArmazenamento()
         {
-            DdlArmazenamento.DataSource = Framework.GetDataTable("select ID_Maquina, Sistema from tb_maquina");
+            DdlArmazenamento.DataSource = Framework.GetDataTable("select ID_Maquina, Armazenamento from tb_maquina");
             DdlArmazenamento.DataBind();
         }
 
         protected void AtualizaDdlQtdArmazenamento()
         {
-            DdlQtdArmazenamento.DataSource = Framework.GetDataTable("select ID_Maquina, Sistema from tb_maquina");
+            DdlQtdArmazenamento.DataSource = Framework.GetDataTable("select ID_Maquina, Armazenamento from tb_maquina");
             DdlQtdArmazenamento.DataBind();
         }
 

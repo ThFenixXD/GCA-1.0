@@ -1,0 +1,39 @@
+﻿/*.header__Principal {
+    background-color: #4F78C4;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+#Lb__Titulo{
+    font-size: 6rem;
+    font-weight: 600;
+    margin-right: 2rem;
+}
+
+.Menu {
+    text-align:center;
+    margin-right: 2rem;
+}
+
+.Menu__ul {
+    display: flex;
+    justify-content: center;
+    grid-gap: 1rem;
+    font-weight: 600;
+}
+
+.Btn__Menu {
+    color: white;
+    text-decoration: none;
+}
+
+.Btn__Menu:hover{
+    text-decoration: underline;
+}
+
+/*.container{
+    display:flex;
+    margin:auto;
+    border:1px solid red;
+}*/*/
